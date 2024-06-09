@@ -1,0 +1,24 @@
+eccube.event.render.homepage.before:
+    - [afterLogin, NORMAL]
+eccube.event.controller.shopping_complete.before:
+    - [beforeOrder, NORMAL]
+eccube.event.controller.product_detail.before:
+    - [productdetail, NORMAL]
+eccube.event.controller.product_detail.after:
+    - [afterCart, NORMAL]
+eccube.event.controller.cart.before:
+    - [beforeCart, NORMAL]
+eccube.event.controller.cart_down.after:
+    - [cartdown, NORMAL]
+eccube.event.controller.cart_up.after:
+    - [cartup, NORMAL]
+eccube.event.controller.cart_remove.before:
+    - [cartremove, NORMAL]
+eccube.event.controller.shopping.before:
+    - [beforeShopping, NORMAL]
+eccube.event.controller.mypage_history.before:
+    - [mypageHistory, NORMAL]
+eccube.event.controller.mypage_favorite.before:
+    - [mypageFavorite, NORMAL]
+eccube.event.controller.admin_order_edit.before:
+    - [adminOrder, NORMAL]

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>旅の本</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/template/default/img/common/favicon.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<style>
+</style>
+<script>
+$(function() {
+    //$('form').submit();
+});
+</script>
+<body>
+<form action="https://www.tabinohon.com/index_dev.php/cart/down/{{ pcid }}" method="POST">
+<input type="hidden" name="_method" value="PUT">
+<input type="hidden" name="productClassId" value="{{ pcid }}">
+<input type="hidden" name="csrf" value="{{ csrf }}">
+</form>
+</body>
+</html>
